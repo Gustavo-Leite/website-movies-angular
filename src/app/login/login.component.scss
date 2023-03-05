@@ -1,0 +1,141 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background: linear-gradient(135deg, #000000 0%, #2f00ff 100%);
+
+  .logo {
+    top: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+  }
+
+  .desc {
+    width: 55rem;
+    top: 200px;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    text-align: right;
+    position: absolute;
+  }
+
+  .film {
+    width: 27.6rem;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+  }
+
+  .login-form {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 30px #383838;
+    position: absolute;
+  }
+
+  .form-group {
+    margin-top: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .btn-container {
+    position: relative;
+
+    .btn {
+      margin-top: 30px;
+    }
+
+    .error {
+      top: 32px;
+      right: 0px;
+      color: red;
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: 1290px) {
+  .login-container {
+
+    .film {
+      width: 41.6rem;
+    }
+
+    .logo {
+    right: 50px;
+    }
+
+    .desc {
+    right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .login-container {
+    justify-content: center;
+
+    .film {
+      display: block;
+      width: 27.6rem;
+    }
+
+    .logo {
+      top: 20px;
+      font-size: 50px;
+      text-align: center;
+      position: fixed;
+    }
+
+    .desc {
+      top: 90px;
+      font-size: 32px;
+      text-align: right;
+    }
+
+    .login-form {
+      bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .login-container {
+    justify-content: center;
+
+    .film {
+      display: none;
+    }
+
+    .logo {
+      width: 310px;
+      top: 60px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .desc {
+      width: 300px;
+      top: 130px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .login-form {
+      width: 280px;
+      bottom: 90px;
+    }
+  }
+}

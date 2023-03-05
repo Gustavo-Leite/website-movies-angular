@@ -1,0 +1,246 @@
+.home-container {
+  display: flex;
+
+  .all-movies {
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    border-right: 1px solid #5029ff;
+
+    .top {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h4 {
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+        border-left: 5px solid #2F00FF;
+      }
+
+      .view-all {
+        font-family: 'Comfortaa', cursive;
+        color: #2F00FF;
+        cursor: pointer;
+      }
+    }
+
+    .all-time-popular-movies {
+      display: none;
+    }
+
+    .movies-thumbnail {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .movie {
+        .cover {
+          img {
+            border-radius: 5px;
+          }
+        }
+
+        .detail {
+          width: 180px;
+
+          .name {
+            height: 50px;
+            margin-top: 5px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.rating {
+  padding-right: 45px;
+  position: relative;
+
+  .rating-value {
+    top: 10px;
+    right: 0px;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+  }
+}
+
+@media (max-width: 1600px) {
+  .home-container {
+    .all-movies {
+      .top {
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      .movies-thumbnail {
+        .movie {
+          .cover {
+            img {
+              width: 150px;
+            }
+          }
+
+          .detail {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .popular-movies {
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .home-container {
+    .all-movies {
+      padding: 10px 20px;
+
+      .top {
+        h4 {
+          font-size: 15px;
+        }
+      }
+
+      .movies-thumbnail {
+        .movie {
+          .cover {
+            img {
+              width: 130px;
+            }
+          }
+
+          .detail {
+            width: 130px;
+          }
+        }
+      }
+    }
+
+    .popular-movies {
+      padding: 10px 20px;
+
+      h4 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .home-container {
+
+    .all-movies {
+      width: 100%;
+      padding: 20px 40px;
+      border-right: none;
+
+      .top {
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      .all-time-popular-movies {
+        display: block;
+
+        .movies-thumbnail {
+          overflow-y: hidden;
+          overflow-x: scroll;
+
+          .movie {
+            .cover {
+              img {
+                width: 150px;
+                margin-inline: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      .movies-thumbnail {
+
+        .movie {
+          .cover {
+            img {
+              width: 150px;
+            }
+          }
+
+          .detail {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .home-container {
+
+    .all-movies {
+      width: 100%;
+      padding: 10px 20px;
+      border-right: none;
+
+      .top {
+        h4 {
+          font-size: 18px;
+        }
+      }
+
+      .all-time-popular-movies {
+        display: block;
+
+        .movies-thumbnail {
+          overflow-y: hidden;
+          overflow-x: scroll;
+
+          .movie {
+            .cover {
+              img {
+                width: 150px;
+                margin-inline: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      .movies-thumbnail {
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        .movie {
+          .cover {
+            img {
+              width: 150px;
+              margin-inline: 10px;
+            }
+          }
+
+          .detail {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
