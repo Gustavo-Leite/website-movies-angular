@@ -17,42 +17,12 @@ Run this comand for a dev server. Navigate to `http://localhost:4200/`. The appl
 $ ng serve
 ```
 
-## Code scaffolding
-
-Run these commands to generate a new component.
-
-```bash
-$ ng generate component component-name
-```
-
-You can also use.
+## To access
+to access the application, enter this data.
 
 ```bash
-$ ng generate directive|pipe|service|class|guard|interface|enum|module
-```
-
-## Build
-
-Run this comand to build the project. The build artifacts will be stored in the `dist/` directory.
-
-```bash
-$ ng build
-```
-
-## Running unit tests
-
-Run this comand to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-```bash
-$ ng test
-```
-
-## Running end-to-end tests
-
-Run this comand to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-```bash
-ng e2e
+Username: josh
+Password: 1234
 ```
 
 ## Further help
